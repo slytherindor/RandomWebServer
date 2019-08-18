@@ -4,7 +4,10 @@
   "description": "RandomWebServer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run serve",
+    "serve": "node dist/index.js",
+    "watch-node": "nodemon dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,7 @@
   },
   "homepage": "https://github.com/slytherindor/RandomWebServer#readme",
   "devDependencies": {
+    "@types/express": "^4.17.0",
     "@types/node": "^12.7.2",
     "@typescript-eslint/eslint-plugin": "^2.0.0",
     "@typescript-eslint/parser": "^2.0.0",
@@ -27,6 +31,10 @@
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.19.1",
     "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
